@@ -1,0 +1,9 @@
+gameNo = 1
+jFile = ""
+jfiles = []
+randomizerEnabled = True
+asked = 0
+gitRoot = "https://gist.githubusercontent.com/kairotlei/adf26da8bb9beb5a7628342fb612b42c/raw/"
+gitDb = "hi"
+dlDone = False
+timerFlag = False
