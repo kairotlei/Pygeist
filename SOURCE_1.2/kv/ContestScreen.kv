@@ -1,0 +1,106 @@
+<ContestScreen>:
+    name: "ContestScreen"
+    id: ContestScreen
+    MDBoxLayout:
+        orientation: "vertical"
+        
+        # Barra de opciones
+        MDTopAppBar:
+            id: tbar
+            title: " "
+            elevation: 10
+            right_action_items: [["exit-to-app", lambda x: root.goStart(ContestScreen.trueCt, ContestScreen.totalQuestions)]]
+            #left_action_items: [["folder-open", lambda x: root.read_data_this(user_name.text), "Leer datos de *NOMBRE"],  ["floppy", lambda x: root.save_data(user_name.text, user_surname.text, user_course.text, user_email.text, user_email_domain.text, user_telegram.text), "Guardar"]]
+            
+            
+        MDFloatLayout:
+            orientation: "vertical"
+            
+            MDCard:
+                id: user_card
+                size_hint: .9, .9
+                pos_hint: {"center_x":.5, "center_y":.5,}
+                padding: 13
+                spacing: "13dp"
+
+                MDBoxLayout:
+                    orientation: "vertical"
+
+                        
+                    MDLabel:
+                        id: ask
+                        text: "Pregunta pregunta pregunta pregunta pregunta pregunta pregunta pregunta pregunta pregunta pregunta pregunta pregunta pregunta"
+                        font_size: 24
+                        halign: "center"
+                        text_color: 0,0,0,1
+                        size_hint: 1, .15
+                    
+                    MDProgressBar:
+                        id: proBar
+                        value: 0
+                        padding: "1dp"
+                        spacing: 1
+                        size_hint: 1, .004
+                    
+                    MDLabel:
+                        text: "a"
+                        font_size: 0
+                        text_color: 0,0,0,0
+                        size_hint: .7, .05
+
+                    MDGridLayout:
+                        cols: 2
+                        pos_hint: {"center_x":.5, "center_y":.1,}
+                        size_hint: .9, .13
+                        padding: 5
+                        spacing: "5dp"
+
+                        MDRaisedButton:
+                            halign: "center"
+                            text: "aaaa"
+                            id: a
+                            #            RR  GG  BB  AL
+                            md_bg_color: 0.33,0.00,0.50,1
+                            text_color:  1.0,1.0,1.0,1
+                            on_release: root.select("a", self.text)
+                            size_hint: .40, .3
+                            
+
+                        MDRaisedButton:
+                            halign: "center"
+                            text: "bbbb"
+                            id: b
+                            #            RR  GG  BB  AL
+                            md_bg_color: 0.33,0.00,0.50,1
+                            text_color:  1.0,1.0,1.0,1
+                            on_release: root.select("b", self.text)
+                            size_hint: .40, .3
+                            
+
+                        MDRaisedButton:
+                            halign: "center"
+                            text: "cccc"
+                            id: c
+                            #            RR  GG  BB  AL
+                            md_bg_color: 0.33,0.00,0.50,1
+                            text_color:  1.0,1.0,1.0,1
+                            on_release: root.select("c", self.text)
+                            size_hint: .40, .3
+
+                        MDRaisedButton:
+                            halign: "center"
+                            text: "dddd"
+                            id: d
+                            #            RR  GG  BB  AL
+                            md_bg_color: 0.33,0.00,0.50,1
+                            text_color:  1.0,1.0,1.0,1
+                            on_release: root.select("d", self.text)
+                            size_hint: .40, .3
+                            
+                    MDLabel:
+                        halign: "right"
+                        text: ""
+                        #            RR  GG  BB  AL
+                        size_hint: 1, .15
+                        
+                            
